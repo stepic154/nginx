@@ -5,11 +5,11 @@
 
 sudo /etc/init.d/gunicorn restart
 
-cd /home/box/web
-sudo gunicorn --bind 0.0.0.0:8000 --access-logfile /tmp/acc_hello.log --error-logfile /tmp/err_hello.log -D hello:app
+#cd /home/box/web
+#sudo gunicorn --bind 0.0.0.0:8000 --access-logfile /tmp/acc_hello.log --error-logfile /tmp/err_hello.log -D hello:app
 
-cd /home/box/web/ask
-sudo gunicorn --bind 0.0.0.0:8080 --access-logfile /tmp/acc_ask.log --error-logfile /tmp/err_ask.log -D ask.wsgi:application
+#cd /home/box/web/ask
+#sudo gunicorn --bind 0.0.0.0:8080 --access-logfile /tmp/acc_ask.log --error-logfile /tmp/err_ask.log -D ask.wsgi:application
 
 # nginx
 sudo rm -rf /etc/nginx/sites-enabled/default
