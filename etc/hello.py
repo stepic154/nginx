@@ -6,7 +6,7 @@ CONFIG = {
         '--bind=0.0.0.0:8080',
         '--access-logfile /home/box/acc_hello.log',
         '--error-logfile /home/box/err_hello.log',
-        '--daemon',
+        #'--daemon',
         '--workers=4',
         '--timeout=60',
         #'wsgi',
