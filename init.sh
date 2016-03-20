@@ -7,5 +7,5 @@ sudo /etc/init.d/nginx restart
 sudo ln -sf /home/box/web/etc/hello.py /etc/gunicorn.d/hello.py
 sudo ln -sf /home/box/web/etc/ask.py /etc/gunicorn.d/ask.py
 sudo /etc/init.d/gunicorn restart
-sudo gunicorn -c /etc/gunicorn.d/hello.py hello:app
-#sudo gunicorn -c /etc/gunicorn.d/ask.py ask:application
+sudo gunicorn -c /etc/gunicorn.d/hello.py 
+sudo gunicorn -c /etc/gunicorn.d/ask.py 

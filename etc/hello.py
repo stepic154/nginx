@@ -10,6 +10,6 @@ CONFIG = {
         '--workers=4',
         '--timeout=60',
         #'wsgi',
-        #'hello:app',
+        'hello:app',
     ),
 }
